@@ -16,13 +16,13 @@ pipeline {
     stages {
 		stage('Get case files') {
 			steps {
-				echo “Get case files”
+				echo "Get case files"
 			}    
 		}
 	
 		stage('Get exe files') {
 			steps {
-				echo “Get exe files”
+				echo "Get exe files"
 			}	
 		}
 		
