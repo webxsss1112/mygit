@@ -55,7 +55,7 @@ pipeline {
 			}          
 		}
 		
-		stage('Report generation') {
+		stage('Report') {
 			steps {
 				echo "Report"
 			}          
