@@ -31,19 +31,19 @@ pipeline {
 			parallel{
 				stage('Is AutoScript Modules exist') {
 					steps {
-						echo %Modules%					
+						echo Modules				
 					}
 				}
 				
 				stage('Is AutoScript Data exist') {
 					steps {
-						echo %Modules%						
+						echo Modules					
 					}    
 				}
 				
 				stage('Is Engineer build exist') {
 					steps {
-						echo %Modules%					
+						echo Modules				
 					}    
 				}
 			}			
