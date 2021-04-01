@@ -31,31 +31,19 @@ pipeline {
 			parallel{
 				stage('Is AutoScript Modules exist') {
 					steps {
-						echo Modules
-						echo Build_Version
-						echo OnOffline
-						echo Use_Exist_Image
-						echo Max_Instance_Number
+						echo %Modules%					
 					}    
 				}
 				
 				stage('Is AutoScript Data exist') {
 					steps {
-						echo Modules
-						echo Build_Version
-						echo OnOffline
-						echo Use_Exist_Image
-						echo Max_Instance_Number
+						echo %Modules%						
 					}    
 				}
 				
 				stage('Is Engineer build exist') {
 					steps {
-						echo Modules
-						echo Build_Version
-						echo OnOffline
-						echo Use_Exist_Image
-						echo Max_Instance_Number
+						echo %Modules%					
 					}    
 				}
 			}			
