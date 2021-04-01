@@ -32,7 +32,7 @@ pipeline {
 				stage('Is AutoScript Modules exist') {
 					steps {
 						echo %Modules%					
-					}    
+					}
 				}
 				
 				stage('Is AutoScript Data exist') {
