@@ -5,7 +5,7 @@ pipeline {
     }
   }
   stages {
-    stage {
+    stage('Blue Ocean') {
       steps {
         echo "aaaaa"
       }      
