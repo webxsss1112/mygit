@@ -14,12 +14,6 @@ pipeline {
 
     stage('Get exe files') {
       parallel {
-        stage('Get exe files') {
-          steps {
-            echo 'Get exe files'
-          }
-        }
-
         stage('Get trigger STEX tools') {
           steps {
             bat 'echo "Get trigger STEX tools"'
@@ -35,6 +29,12 @@ pipeline {
         stage('Get report tool') {
           steps {
             bat 'echo "Get report tool"'
+          }
+        }
+
+        stage('Get module tools') {
+          steps {
+            bat 'echo "Get module tools"'
           }
         }
 
