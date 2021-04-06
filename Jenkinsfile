@@ -25,9 +25,9 @@ pipeline {
 
     stage('Get exe files') {
       parallel {
-        stage('Get trigger STEX tools') {
+        stage('Get trigger STEX tool') {
           steps {
-            bat 'echo "Get trigger STEX tools"'
+            bat 'echo "Get trigger STEX tool"'
           }
         }
 
