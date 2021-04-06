@@ -6,9 +6,20 @@ pipeline {
 
   }
   stages {
-    stage('Get case files') {
-      steps {
-        echo 'Get case files'
+    stage('Get testing data') {
+      parallel {
+        stage('Get modules') {
+          steps {
+            echo 'Get modules'
+          }
+        }
+
+        stage('Get automation data') {
+          steps {
+            echo 'Get automation data'
+          }
+        }
+
       }
     }
 
