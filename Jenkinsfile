@@ -65,15 +65,56 @@ pipeline {
       }
     }
 
-    stage('Testing') {
-      steps {
-        echo 'Testing'
+    stage('API test') {
+      parallel {
+        stage('API test') {
+          steps {
+            echo 'asdasd'
+          }
+        }
+
+        stage('Smoke test') {
+          steps {
+            echo 'Smoke test'
+          }
+        }
+
+        stage('Intergration test') {
+          steps {
+            echo 'Intergration test'
+          }
+        }
+
+        stage('End to End test') {
+          steps {
+            echo 'End to End test'
+          }
+        }
+
+        stage('System test') {
+          steps {
+            echo 'System test'
+          }
+        }
+
       }
     }
 
     stage('Report') {
       steps {
         echo 'Report'
+      }
+    }
+
+    stage('CM release build trigger') {
+      steps {
+        echo 'CM release build trigger'
+      }
+    }
+
+    stage('TBD') {
+      steps {
+        echo 'TBD'
       }
     }
 
