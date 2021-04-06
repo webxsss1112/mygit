@@ -20,9 +20,21 @@ pipeline {
           }
         }
 
-        stage('STEX DDEMO') {
+        stage('Get trigger STEX tools') {
           steps {
-            bat 'echo "hello word"'
+            bat 'echo "Get trigger STEX tools"'
+          }
+        }
+
+        stage('Get rerun tool') {
+          steps {
+            bat 'echo "Get rerun tool"'
+          }
+        }
+
+        stage('Get report tool') {
+          steps {
+            bat 'echo "Get report tool"'
           }
         }
 
