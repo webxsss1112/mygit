@@ -69,7 +69,7 @@ pipeline {
       parallel {
         stage('API test') {
           steps {
-            echo 'asdasd'
+            echo 'API test'
           }
         }
 
@@ -101,8 +101,19 @@ pipeline {
     }
 
     stage('Report') {
-      steps {
-        echo 'Report'
+      parallel {
+        stage('Web report') {
+          steps {
+            echo 'Web report'
+          }
+        }
+
+        stage('Xlsx report') {
+          steps {
+            echo 'Xlsx report'
+          }
+        }
+
       }
     }
 
