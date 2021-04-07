@@ -76,7 +76,7 @@ pipeline {
       }
     }
 
-    stage('API test') {
+    stage('Testing') {
       parallel {
         stage('API test') {
           steps {
